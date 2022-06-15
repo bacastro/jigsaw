@@ -1,0 +1,166 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/** Globales**/
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 120rem;
+    width: 90%;
+    height: 60rem;
+    max-height: 60rem;
+    margin: 0 auto;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    background-color: rgb(39, 95, 216);
+}
+
+
+    h2,h3{
+    font-weight: 400;
+    font-family: 'Carter One', cursive;
+    color: #FFF;
+}
+/*
+h1{
+    font-size: 4.4rem;
+}
+
+h2{
+    font-size: 3.6rem;
+}
+
+h3{
+    font-size: 2.8rem;
+}
+*/
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.contenedor-menu{
+    
+    margin: 0 20rem 5rem;
+    padding: 2rem;
+}
+
+.titulo{
+    color: #FFF;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo h1{
+    
+    line-height: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10rem;
+}
+
+.titulo h2{
+    line-height: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu-texto{
+    margin: 1rem 4rem;
+    padding: 1rem 3rem;
+    
+}
+
+/** Botones**/
+.btn-big{
+    text-decoration: none;
+    background-color: #8cbc00;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Carter One', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 1rem 6rem;
+    transition: background-color .3s ease-out;
+    border: none;
+    border-radius: 1rem;
+}
+
+.btn-big:hover{
+    background-color: #769c02;
+    cursor: pointer;
+}
+.btn-small{
+    text-decoration: none;
+    background-color: #8cbc00;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Carter One', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    transition: background-color .3s ease-out;
+    border: none;
+    border-radius: 1rem;
+}
+
+.btn-small:hover{
+    background-color: #769c02;
+    cursor: pointer; 
+}
+
+/**Menu Select  */
+
+.menu-select{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid #FFF;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+.texto-select{
+    margin: 1rem 2rem;
+}
+
+.btn-select{
+    display: block;
+    text-decoration: none;
+    background-color: #8cbc00;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Carter One', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    transition: background-color .3s ease-out;
+    border: none;
+    border-radius: 1rem;
+}
+
+.btn-select:hover{
+    background-color: #769c02;
+    cursor: pointer;
+}
