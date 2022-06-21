@@ -12,6 +12,9 @@ body{
 }
 
 /** Globales**/
+ul{
+    list-style:none;
+}
 
 .contenedor{
     display: flex;
@@ -20,7 +23,6 @@ body{
     max-width: 120rem;
     width: 90%;
     height: 60rem;
-    max-height: 60rem;
     margin: 0 auto;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 1rem;
@@ -164,3 +166,62 @@ img{
     background-color: #769c02;
     cursor: pointer;
 }
+
+/**Organizar el rompecabezas*/
+
+/* .contenedor-rompecabezas{
+    margin: 0 auto;
+    width: 50%;
+    height: 10rem;
+} */
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.contenedor-opciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.flecha-atras{
+    width: 20%;
+    margin: 2rem;
+    margin-bottom: 6rem; 
+}
+
+.imagen-muestra{
+    margin: 0 auto;
+    width: 25rem;
+    opacity: 0.4;
+}
+
+.btn-confirmar{
+    display: flex;
+    flex-direction: row;
+    margin: 9rem auto;
+}
+
+.contenedor-rompecabezas{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.rompecabezas-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding: 0;
+    margin: 1rem;
+}
+
+.rompecabezas-grid img {
+    height: 18rem;
+    width: 100%;
+    margin: 0;
+}
+
+
+
