@@ -223,5 +223,19 @@ img{
     margin: 0;
 }
 
+.rompecabezasmedio-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    padding: 0;
+    margin: 1rem;
+}
+
+.rompecabezasmedio-grid img{
+    height: 14rem;
+    width: 100%;
+    margin: 0;
+}
+
 
 

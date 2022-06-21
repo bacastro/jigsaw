@@ -23,9 +23,11 @@ function desordenarRompecabezas(dificultad){
     if(dificultad==='facil'){
         aleatorio = Math.ceil(Math.random()*3);
         valor.sort(function() { return Math.random() - 0.5 });
+        imagenMuestra.setAttribute('src',`./img/rompecabezas${aleatorio}/10.png`)
     }else if(dificultad === 'medio'){
         aleatorio = 4;
         valor.sort(function() { return Math.random() - 0.5 });
+        imagenMuestra.setAttribute('src',`./img/rompecabezas${aleatorio}/17.png`)
     }else if(dificultad === 'dificil'){
         aleatorio = 5;
         valor.sort(function() { return Math.random() - 0.5 });
@@ -37,7 +39,6 @@ function desordenarRompecabezas(dificultad){
         piezas[i].addEventListener('click',seleccionarFicha);
     }
 
-    imagenMuestra.setAttribute('src',`./img/rompecabezas${aleatorio}/10.png`)
 }
 
 function seleccionarFicha(e){
