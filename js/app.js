@@ -1,5 +1,5 @@
 //Selección de la dificultad
-const dificultad = document.querySelector('#dificultad')
+const dificultad = document.querySelector('#dificultad');
 let dificultadSeleccionada; 
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -14,10 +14,10 @@ function seleccionarDificultad(e){
     }
 
     if(dificultadSeleccionada === "1"){
-        window.open(`http://127.0.0.1:5500/facil.html`, "_self")
-    }
+        window.open(`http://127.0.0.1:5500/facil.html`, "_self");
+    };
     if(dificultadSeleccionada==="2"){
-        window.open(`http://127.0.0.1:5500/medio.html`, "_self")
-    }
+        window.open(`http://127.0.0.1:5500/medio.html`, "_self");
+    };
 
 }

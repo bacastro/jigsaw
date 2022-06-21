@@ -1,7 +1,6 @@
 const dificultad = document.querySelector('.contenedor').getAttribute('data-dificultad');
 const btnConfirmar = document.querySelector('#btn-confirmar');
 let piezas = document.querySelectorAll('.pieza');
-let aleatorio;
 let infFichaSeleccionada=null;
 let infFichaCambiar=null;
 let numFichaCambiar;
@@ -10,6 +9,8 @@ let fichaCambiar;
 let fichaSeleccionada;
 let idFichaSeleccionada;
 let idFichaCambiar;
+let agregarBorde;
+let quitarBorde;
 
 document.addEventListener('DOMContentLoaded', () =>{
     desordenarRompecabezas(dificultad);
@@ -18,7 +19,8 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 function desordenarRompecabezas(dificultad){
     let valor=arrayTamano(dificultad);
-    let imagenMuestra= document.querySelector('.imagen-muestra img');  
+    let imagenMuestra= document.querySelector('.imagen-muestra img');
+    let aleatorio;  
 
     if(dificultad==='facil'){
         aleatorio = Math.ceil(Math.random()*3);
@@ -43,12 +45,13 @@ function desordenarRompecabezas(dificultad){
 
 function seleccionarFicha(e){
     e.preventDefault();
-
+    
     if(infFichaSeleccionada!=null && infFichaCambiar==null){
         infFichaCambiar=e.target.src;
         idFichaCambiar=e.target.attributes.dataid.value;
         numFichaCambiar=e.target.id;
         fichaCambiar = document.querySelector(`#${numFichaCambiar}`);
+        quitarBorde=agregarBorde.classList.remove("imagen-borde")
     }
 
     if(infFichaSeleccionada==null){
@@ -56,6 +59,8 @@ function seleccionarFicha(e){
         idFichaSeleccionada=e.target.attributes.dataid.value;
         numFichaSeleccionada=e.target.id;
         fichaSeleccionada = document.querySelector(`#${numFichaSeleccionada}`);
+        agregarBorde = e.target;
+        agregarBorde.classList.add("imagen-borde");
     }
 
     if(infFichaSeleccionada!=null && infFichaCambiar!=null){
@@ -73,6 +78,8 @@ function verificarRompecabezas(){
     let valorId;
     let valorDataid;
     let resultado;
+    const btnContinuar = document.querySelector('#btn-continuar');
+    const agregarBody = document.querySelector('.modal-body')
 
     for (let i = 0; i < piezas.length; i++) {
         valorId= piezas[i].id;
@@ -86,9 +93,11 @@ function verificarRompecabezas(){
     }
 
     if(resultado){
-        console.log("Has Ganado");
+        agregarBody.textContent = "Felicitaciones !Has Ganado¡";
+        btnContinuar.classList.remove('disable');
     }else{
-        console.log("Revisa que no esta completo");
+        agregarBody.textContent = "Revisa el rompecabezas porque aun no esta completo ";
+        btnContinuar.classList.add('disable');
     }
 }
 
