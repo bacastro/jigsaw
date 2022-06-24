@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JigSaw</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <main class="contenedor" data-dificultad="dificil">
+        <div class="contenedor-grid">
+            <div class="contenedor-opciones">
+                <div class="flecha-atras">
+                    <a href="./index.html" class="atras" ><img src="/img/flecha-izquierda.png" alt="flecha atras"></a>
+                </div>
+                <div class="imagen-muestra">
+                    <img src="/img/10.png" alt="imagen muestra ">
+                </div>
+
+                <div class="btn-confirmar">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-select" href="#" id="btn-confirmar" >Confirmar</button>
+                </div>
+                
+            </div>
+
+            <div class="contenedor-rompecabezas" >
+                <div>
+                    <ul class="rompecabezasdificil-grid" id="piezas">
+                        <li class="lista"><img id="pieza1" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza2" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza3" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza4" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza5" class="pieza"  alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza6" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza7" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza8" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza9" class="pieza" alt="imagen galeria"></li>
+                        
+                        <li class="lista"><img id="pieza10" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza11" class="pieza"  alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza12" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza13" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza14" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza15" class="pieza" alt="imagen galeria"></li>
+
+                        <li class="lista"><img id="pieza16" class="pieza" alt="imagen galeria"></li>
+
+                        <li class="lista"><img id="pieza17" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza18" class="pieza" alt="imagen galeria"></li>
+                        
+                        <li class="lista"><img id="pieza19" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza20" class="pieza"  alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza21" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza22" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza23" class="pieza" alt="imagen galeria"></li>
+        
+                        <li class="lista"><img id="pieza24" class="pieza" alt="imagen galeria"></li>
+
+                        <li class="lista"><img id="pieza25" class="pieza" alt="imagen galeria"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Resultado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <a type="button" class="btn btn-primary disable" id="btn-continuar" href="./select.html">Continuar</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/rompecabezas.js"></script>
+</body>
+</html>
