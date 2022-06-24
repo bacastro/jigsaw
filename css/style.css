@@ -9,6 +9,7 @@ html{
 body{
     font-size: 1.6rem;
     line-height: 1.5;
+    margin: 8px;
 }
 
 /** Globales**/
@@ -64,25 +65,36 @@ img{
 .titulo{
     color: #FFF;
     margin-top: 5rem;
-    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.titulo h1{
+
+.titulo-select{
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo h1, .titulo-select h1{
     
     line-height: 0;
     font-family: 'Press Start 2P', cursive;
     font-size: 10rem;
 }
 
-.titulo h2{
+.titulo h2, .titulo-select h2{
     line-height: 0;
     font-family: 'Press Start 2P', cursive;
     font-size: 2rem;
 }
 
+.titulo-jigsaw{
+ margin-top: 2rem;
+}
+
 .menu{
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -133,6 +145,9 @@ img{
 }
 
 /**Menu Select  */
+.titulo-seleccion{
+    margin-top: 5rem;
+}
 
 .menu-select{
     display: flex;
@@ -196,6 +211,17 @@ img{
 .flecha-atras:hover{
     transform: scale(1.1);
 }
+
+.flecha-atras-select{
+    width: 8rem;
+    margin: 2rem 0 0 2rem;
+    transition: all .3s; 
+}
+
+.flecha-atras-select:hover{
+    transform: scale(1.1);
+}
+
 
 .imagen-muestra{
     margin: 0 auto;
