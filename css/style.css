@@ -189,7 +189,12 @@ img{
 .flecha-atras{
     width: 20%;
     margin: 2rem;
-    margin-bottom: 6rem; 
+    margin-bottom: 6rem;
+    transition: all .3s; 
+}
+
+.flecha-atras:hover{
+    transform: scale(1.1);
 }
 
 .imagen-muestra{
@@ -238,6 +243,22 @@ img{
     
 }
 
+.rompecabezasdificil-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    padding: 0;
+    margin: 1rem;
+}
+
+.rompecabezasdificil-grid img{
+    height: 11rem;
+    width: 100%;
+    margin: 0;
+}
+
+
+
 .imagen-borde{
     border: 4px solid rgb(247, 2, 2);
 }
@@ -245,6 +266,10 @@ img{
 .disable{
     cursor: not-allowed;
     pointer-events: none;
+}
+
+.modal-body{
+    font-size: 20px;
 }
 
 

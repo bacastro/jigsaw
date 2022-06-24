@@ -33,6 +33,7 @@ function desordenarRompecabezas(dificultad){
     }else if(dificultad === 'dificil'){
         aleatorio = 5;
         valor.sort(function() { return Math.random() - 0.5 });
+        imagenMuestra.setAttribute('src',`./img/rompecabezas${aleatorio}/26.png`)
     }
 
     for (let i = 0; i < piezas.length; i++) {
@@ -96,7 +97,7 @@ function verificarRompecabezas(){
         agregarBody.textContent = "Felicitaciones !Has Ganado¡";
         btnContinuar.classList.remove('disable');
     }else{
-        agregarBody.textContent = "Revisa el rompecabezas porque aun no esta completo ";
+        agregarBody.textContent = "Revisa el rompecabezas LOOOSER";
         btnContinuar.classList.add('disable');
     }
 }
