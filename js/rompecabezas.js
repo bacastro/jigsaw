@@ -1,5 +1,5 @@
 const dificultad = document.querySelector('.contenedor').getAttribute('data-dificultad');
-let piezas = document.querySelectorAll('.pieza');
+const piezas = document.querySelectorAll('.pieza');
 const btnConfirmar = document.querySelector('#btn-confirmar');
 
 let infFichaSeleccionada=null;
