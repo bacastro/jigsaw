@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    
 </head>
-<body>
+<body class="body">
     <main class="contenedor">
 
         <div class="titulo">
@@ -25,13 +28,50 @@
             </div>
                 
             <div class="menu-texto">
-                <a class="btn-small" href="#">Reglas</a>
+                <a class="btn-small" data-bs-toggle="modal" data-bs-target="#exampleModal"  href="#">Reglas</a>
             </div>
 
             <div class="menu-texto">
                 <a class="btn-small" href="https://www.google.com.co/">Salir</a>
             </div>      
         </nav>
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Reglas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="letras">
+                                                
+                            <ul>
+                                <li>- Presiona la opción Jugar.</li>
+                                <li>- Seleccionar la dificultad deseada:
+                                    <ul>
+                                        <li>- La dificultad Facil tiene tres diferentes imagenes para jugar y se abriran de manera aleatoria.</li>
+                                        <li>- La dificultad Media tiene solo una imagen para jugar.</li>
+                                        <li>- La dificultad Dificil tiene una sola imagen para jugar.</li>
+                                    </ul>
+                                </li>
+                                <li>- En el momento que crean que tengan resuelto el rompecabezas le dan en la opción de "Confirmar" y ahi les indicaran si el Rompecabezas se encuentra resuelto o se encuentran aún incompleto.</li>
+                                <li>- Si el rompecabezas se encuentra completo, se abrira una ventana modal indicando que el jugador ha ganado y se habilitara el boton de "Continuar" y lo enviara nuevamente a la 	ventana para seleccionar la dificultad que desee.</li>
+                                <li>- Si el rompecabezas no se encuentra completo no se habilitara el boton de continuar y te indicara que aún no esta completo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

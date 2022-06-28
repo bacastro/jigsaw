@@ -12,6 +12,12 @@ body{
     margin: 8px;
 }
 
+.body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 8px;
+}
+
 /** Globales**/
 ul{
     list-style:none;
@@ -28,8 +34,7 @@ ul{
     border: 3px solid rgb(0, 0, 0);
     border-radius: 1rem;
     background-color: rgb(39, 95, 216);
-}
-
+} 
 
     h2,h3{
     font-weight: 400;
@@ -83,6 +88,13 @@ img{
     font-size: 10rem;
 }
 
+.titulo h2{
+    
+    line-height: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+}
+
 .titulo h2, .titulo-select h2{
     line-height: 0;
     font-family: 'Press Start 2P', cursive;
@@ -106,6 +118,11 @@ img{
     
 }
 
+.letras li{
+    font-size: 15px;
+    text-align: justify;
+}
+
 /** Botones**/
 .btn-big{
     text-decoration: none;
@@ -124,6 +141,7 @@ img{
 .btn-big:hover{
     background-color: #769c02;
     cursor: pointer;
+    color: #FFF;
 }
 .btn-small{
     text-decoration: none;
@@ -142,6 +160,7 @@ img{
 .btn-small:hover{
     background-color: #769c02;
     cursor: pointer; 
+    color: #FFF;
 }
 
 /**Menu Select  */
