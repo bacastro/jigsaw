@@ -37,19 +37,19 @@ class Rompecabezas{
         if(this.dificultad==='facil'){
             aleatorio = Math.ceil(Math.random()*3);
             valor.sort(function() { return Math.random() - 0.5 });
-            imagenMuestra.setAttribute('src',`./img/rompecabezas${aleatorio}/10.png`)
+            imagenMuestra.setAttribute('src',`../img/rompecabezas${aleatorio}/10.png`)
         }else if(this.dificultad === 'medio'){
             aleatorio = 4;
             valor.sort(function() { return Math.random() - 0.5 });
-            imagenMuestra.setAttribute('src',`./img/rompecabezas${aleatorio}/17.png`)
+            imagenMuestra.setAttribute('src',`../img/rompecabezas${aleatorio}/17.png`)
         }else if(this.dificultad === 'dificil'){
             aleatorio = 5;
             valor.sort(function() { return Math.random() - 0.5 });
-            imagenMuestra.setAttribute('src',`./img/rompecabezas${aleatorio}/26.png`)
+            imagenMuestra.setAttribute('src',`../img/rompecabezas${aleatorio}/26.png`)
         }
     
         for (let i = 0; i < piezas.length; i++) {
-            this.piezas[i].src=`./img/rompecabezas${aleatorio}/${valor[i]}.png`;
+            this.piezas[i].src=`../img/rompecabezas${aleatorio}/${valor[i]}.png`;
             this.piezas[i].setAttribute('dataid',`pieza${valor[i]}`);
             this.piezas[i].addEventListener('click',seleccionarFicha);
         }
